@@ -1,0 +1,22 @@
+$primary_color:rgb(220, 227, 230);
+$gray_color: rgb(109, 106, 106);
+$text_basic_color:rgb(49, 48, 48);
+$blue_color:rgba(8, 102, 253, 0.5);
+$red_color:rgba(211, 108, 12, 0.5);
+$basic_border:rgb(83, 82, 85);
+$basic_white:rgb(216, 216, 216);
+
+// fonts
+@font-face {
+  font-family: Notulen;
+  src: url('../fonts/Notulen.ttf');
+}
+
+$article_font: Verdana,Arial, Helvetica, sans-serif;
+
+
+// font sizings
+$heading-big:4.5rem;
+$heading-meadium:2.5rem;
+$heading-small:1.5rem;
+$basic_text: 1rem

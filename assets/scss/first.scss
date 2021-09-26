@@ -1,0 +1,126 @@
+@import './globals';
+
+
+body{
+  font-family: Notulen;
+}
+header{
+  background-color:$primary_color;
+}
+.container{
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+}
+
+article{
+  max-width: 50%;
+  font-family: $article_font;
+  h3{
+    font-size: $heading-meadium;
+    margin: 1rem 0;
+  }
+  
+  p{
+    
+    word-wrap: normal;
+    font-size: $basic_text;
+    color: $text_basic_color;
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+
+  .desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .date{
+      font-size: 1rem;
+      color: $gray_color;
+    }
+
+    .tags{
+      color: $blue_color;
+      background-color: $primary_color;
+      
+      span{
+        margin: 0 0.2rem;  
+        &::before{
+          content: "#";
+          color:$red_color;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+  }
+
+  table{
+    max-width: 70%;
+    margin: 0.5rem auto;
+    border: 1px solid red;
+    overflow: hidden;
+  
+
+    thead{
+      background-color:$gray_color;
+      color: $basic_white;
+    }
+
+      
+
+    td{
+      border: 1px solid $basic_border;
+      padding: 0.5rem;
+      text-align: center;
+    }
+  
+  }
+  
+  
+
+  blockquote{
+    border-left:4px solid $blue_color;
+    padding: 1rem 2rem;
+    color:$gray_color;
+    font-size: $heading-small;
+    font-weight: 600;
+    
+  }
+
+  em{
+    color: $text_basic_color;
+    font-size: $basic_text;
+  }
+
+}
+
+aside{
+  flex-flow: 20%;
+}
+
+.content{
+  flex-basis: 80%;
+}
+.logo{
+  padding: 2rem;
+
+  h1{
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+
+
+ 
+
+}
+
+

@@ -1,0 +1,104 @@
+@font-face {
+  font-family: Notulen;
+  src: url("../fonts/Notulen.ttf");
+}
+body {
+  font-family: Notulen;
+}
+
+header {
+  background-color: #dce3e6;
+}
+
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  max-width: 50%;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+article h3 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+article p {
+  word-wrap: normal;
+  font-size: 1rem;
+  color: #313030;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+article .desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+article .desc .date {
+  font-size: 1rem;
+  color: #6d6a6a;
+}
+article .desc .tags {
+  color: rgba(8, 102, 253, 0.5);
+  background-color: #dce3e6;
+}
+article .desc .tags span {
+  margin: 0 0.2rem;
+}
+article .desc .tags span::before {
+  content: "#";
+  color: rgba(211, 108, 12, 0.5);
+  font-size: 1.2rem;
+}
+article table {
+  max-width: 70%;
+  margin: 0.5rem auto;
+  border: 1px solid red;
+  overflow: hidden;
+}
+article table thead {
+  background-color: #6d6a6a;
+  color: #d8d8d8;
+}
+article table td {
+  border: 1px solid #535255;
+  padding: 0.5rem;
+  text-align: center;
+}
+article blockquote {
+  border-left: 4px solid rgba(8, 102, 253, 0.5);
+  padding: 1rem 2rem;
+  color: #6d6a6a;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+article em {
+  color: #313030;
+  font-size: 1rem;
+}
+
+aside {
+  flex-flow: 20%;
+}
+
+.content {
+  flex-basis: 80%;
+}
+
+.logo {
+  padding: 2rem;
+}
+.logo h1 {
+  display: inline-block;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=main.css.map */
