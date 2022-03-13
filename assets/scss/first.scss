@@ -1,11 +1,16 @@
 @import './globals';
 
+@mixin card-shadow{
+  box-shadow: rgba($accent_color,0.13) 5px 9px 15px 0px;
+}
 
 body{
   font-family: Notulen;
 }
+
 header{
   background-color:$primary_color;
+  color: $accent_color;
 }
 .container{
   max-width: 80vw;
@@ -14,7 +19,7 @@ header{
 
 main{
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
 }
 
 article{
@@ -23,6 +28,7 @@ article{
   h3{
     font-size: $heading-meadium;
     margin: 1rem 0;
+    font-weight: 800;
   }
   
   p{
@@ -30,7 +36,7 @@ article{
     word-wrap: normal;
     font-size: $basic_text;
     color: $text_basic_color;
-    font-weight: 400;
+    font-weight: 600;
     margin: 1rem 0;
   }
 
@@ -45,51 +51,65 @@ article{
     }
 
     .tags{
-      color: $blue_color;
-      background-color: $primary_color;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 1rem;
+      // font-weight: 900;
       
       span{
         margin: 0 0.2rem;  
-        &::before{
-          content: "#";
-          color:$red_color;
-          font-size: 1.2rem;
-        }
+        border: 1px solid $gray_color;
+        border-radius: 1rem;
+        padding: 0.1rem 0.5rem;
+        color: $text_basic_color;
+        background-color: $blue_color;
+       
       }
     }
 
   }
 
-  table{
-    max-width: 70%;
-    margin: 0.5rem auto;
-    border: 1px solid red;
-    overflow: hidden;
-  
 
-    thead{
-      background-color:$gray_color;
-      color: $basic_white;
-    }
+   
 
+    table{
+      
+      
+      overflow: hidden;
+      border-collapse:collapse;
+      border-spacing: 1rem;
+      margin: 2rem auto;
+      color: $foreground_color;
+      font-weight: 800;
       
 
-    td{
-      border: 1px solid $basic_border;
-      padding: 0.5rem;
-      text-align: center;
+      thead{
+        background-color:$secondary_color;
+        
+        
+      }
+
+      td{
+        border: 1px solid $foreground_color;
+        padding: 0.5rem;
+        text-align: center;
+        border-collapse:collapse;
+      }
+    
     }
-  
-  }
+
+ 
+
+        
   
   
 
   blockquote{
-    border-left:4px solid $blue_color;
+    border-left:4px solid $primary_color;
     padding: 1rem 2rem;
     color:$gray_color;
     font-size: $heading-small;
     font-weight: 600;
+    @include card-shadow()
     
   }
 
@@ -101,13 +121,16 @@ article{
 }
 
 aside{
-  flex-flow: 20%;
+  // flex-flow: 20%;
 }
 
 .content{
-  flex-basis: 80%;
+  // flex-basis: 80%;
+  margin: 0 auto;
 }
+
 .logo{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 2rem;
 
   h1{

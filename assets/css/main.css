@@ -7,7 +7,8 @@ body {
 }
 
 header {
-  background-color: #dce3e6;
+  background-color: #1467eb;
+  color: #97d0e9;
 }
 
 .container {
@@ -17,22 +18,23 @@ header {
 
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 article {
   max-width: 50%;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: Segoe UI Light, Verdana, Arial, Helvetica, sans-serif;
 }
 article h3 {
   font-size: 2.5rem;
   margin: 1rem 0;
+  font-weight: 800;
 }
 article p {
   word-wrap: normal;
-  font-size: 1rem;
-  color: #313030;
-  font-weight: 400;
+  font-size: 1.5rem;
+  color: #292727;
+  font-weight: 600;
   margin: 1rem 0;
 }
 article .desc {
@@ -45,53 +47,53 @@ article .desc .date {
   color: #6d6a6a;
 }
 article .desc .tags {
-  color: rgba(8, 102, 253, 0.5);
-  background-color: #dce3e6;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
 }
 article .desc .tags span {
   margin: 0 0.2rem;
-}
-article .desc .tags span::before {
-  content: "#";
-  color: rgba(211, 108, 12, 0.5);
-  font-size: 1.2rem;
+  border: 1px solid #6d6a6a;
+  border-radius: 1rem;
+  padding: 0.1rem 0.5rem;
+  color: #292727;
+  background-color: rgba(8, 102, 253, 0.5);
 }
 article table {
-  max-width: 70%;
-  margin: 0.5rem auto;
-  border: 1px solid red;
   overflow: hidden;
+  border-collapse: collapse;
+  border-spacing: 1rem;
+  margin: 2rem auto;
+  color: #363a3b;
+  font-weight: 800;
 }
 article table thead {
-  background-color: #6d6a6a;
-  color: #d8d8d8;
+  background-color: #cea10e;
 }
 article table td {
-  border: 1px solid #535255;
+  border: 1px solid #363a3b;
   padding: 0.5rem;
   text-align: center;
+  border-collapse: collapse;
 }
 article blockquote {
-  border-left: 4px solid rgba(8, 102, 253, 0.5);
+  border-left: 4px solid #1467eb;
   padding: 1rem 2rem;
   color: #6d6a6a;
   font-size: 1.5rem;
   font-weight: 600;
+  box-shadow: rgba(151, 208, 233, 0.13) 5px 9px 15px 0px;
 }
 article em {
-  color: #313030;
-  font-size: 1rem;
-}
-
-aside {
-  flex-flow: 20%;
+  color: #292727;
+  font-size: 1.5rem;
 }
 
 .content {
-  flex-basis: 80%;
+  margin: 0 auto;
 }
 
 .logo {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 2rem;
 }
 .logo h1 {
