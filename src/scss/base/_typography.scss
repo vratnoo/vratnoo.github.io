@@ -1,25 +1,18 @@
+@use "sass:map";
 
-@font-face {
-    font-family: 'gordita';
-    src: url('../../assets/fonts/gorditalight-webfont.woff2');
-    font-weight: 100;
+$font-sizes:(
+  h1: $fs-h1,
+  h2: $fs-h2,
+  h3: $fs-h3,
+  h4: $fs-h4,
+  h5: $fs-h5,
+ 
+);
+
+@mixin heading($size) {
+        font-size: map.get($font-sizes, $size); 
+        font-weight: 600;
 }
 
-@font-face {
-    font-family: 'gordita';
-    src: url('../../assets/fonts/gorditaregular-webfont.woff2');
-    font-weight: 400;
-}
 
-@font-face {
-    font-family: 'gordita';
-    src: url('../../assets/fonts/gorditamedium-webfont.woff2');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: 'gordita';
-    src: url('../../assets/fonts/gorditabold-webfont.woff2');
-    font-weight: 600;
-}
-
+    

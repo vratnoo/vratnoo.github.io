@@ -1,0 +1,50 @@
+$font-family-code: "Courier New", Courier, monospace;
+
+$primary: #6b76f3;
+$secondary: #cb4b16;
+
+
+// sementic colors
+$clr-navbar:#f0f0f0;
+$clr-navbar-hover: darken($clr-navbar,10%);
+
+$clr-border-light: #e0e0e0;
+$clr-link:#111;
+$clr-link-hover:#fff;
+
+// gray colors
+$clr-gray-opacity:rgba(0,0,0,0.03);
+
+
+$fs-h1: 2.5rem;
+$fs-h2: 2rem;
+$fs-h3: 1.75rem;
+$fs-h4: 1.5rem;
+$fs-h5: 1.25rem;
+$fs-h6: 1rem;
+$fs-small: 0.875rem;
+$fs-xsmall: 0.5rem;
+
+// spacing
+$spacing-xs: 0.5rem;
+$spacing-s: 0.75rem;
+$spacing-m: 1rem;
+$spacing-l: 1.5rem;
+$spacing-xl: 2rem;
+
+
+// border radius
+$br-radius-s: 0.25rem;
+$br-radius-m: 0.5rem;
+$br-radius-l: 0.75rem;
+$br-radius-xl: 1rem; 
+
+// page width
+$page-width: 850px;
+
+
+// breakpoints
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;

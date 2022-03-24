@@ -1,0 +1,114 @@
+.navigation{
+    background-color: $clr-navbar;
+    height: 60px;
+    border-bottom: 1px solid $clr-border-light;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    a {
+        &:hover {
+            background-color: $clr-navbar-hover;
+        }
+    }
+
+    
+    &__wrapper{
+        max-width: $page-width;
+        margin:  0 auto;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        padding: 0.5rem 1.5rem;
+
+        @include md{
+            padding: 0 1rem;
+        }
+    }
+   
+    &__brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-logo{
+            font-size: $fs-h6;
+            font-weight: 600;
+            padding: $spacing-xs;
+            border-radius: $br-radius-s;
+
+        }
+            
+    }
+
+    &__links{
+        display: flex;
+        align-items: center;
+        
+
+        img{
+            max-height: 20px;
+            max-width: 25px;
+            margin-right: $spacing-xs;
+        }
+        
+        a{
+            display: flex;
+            align-items: center;
+            padding: $spacing-xs;
+            border-radius: $br-radius-s;
+            font-size: $fs-small;
+            font-weight: 500;
+
+            @include md{
+               flex-direction: column;
+            }
+        }
+    }
+    
+    &__toolbar{
+        display: flex;
+        align-items: center;
+        gap: $spacing-xs;
+
+        img{
+            max-height: 20px;
+            max-width: 25px;
+        }
+        
+
+    }
+    &__social{
+        display: flex;
+        gap: $spacing-xs;
+
+        a{
+            border-radius: $br-radius-s;
+            padding: $spacing-xs;
+            display: flex;
+            align-items: center;
+        }
+
+        @include md{
+            display: none;
+        }
+
+    }
+    
+    &__theme-switcher{
+        outline: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: $spacing-xs;
+        border-radius: $br-radius-s;
+
+        &:hover {
+            background-color: $clr-navbar-hover;
+        }
+        
+    }
+}
