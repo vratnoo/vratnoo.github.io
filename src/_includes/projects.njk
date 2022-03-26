@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+
+<main>
+    <article>
+        <div>
+            <header>
+                 <div class="container">
+                    <h1>{{ title }}</h1>
+                    <p class="desc">
+                        {{ desc }}
+                    </p>
+                </div>
+            </header>
+            <section class="container container--lg">
+                {{ content| safe }}
+            </section>
+        </div>
+
+    </article>
+</main>
+

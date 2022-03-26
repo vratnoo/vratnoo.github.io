@@ -5,35 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="site">
     <header class="navigation">
     <div class="navigation__wrapper">
         <div class="navigation__brand">
-            <a href="" class="link navigation__brand-logo">
+            <a href="/" class="link navigation__brand-logo">
                 Vikram Ratnoo
             </a>
         </div>
         <ul class="navigation__links">
-            <li><a href="">
-                <img src="../../assets/img/nav-1.png" alt="">
+            <li><a href="/blog">
+                <img src="/assets/img/nav-1.png" alt="">
                 Articles</a></li>
-            <li><a href="">
-                <img src="../../assets/img/nav-2.png" alt="">
+            <li><a href="/projects">
+                <img src="/assets/img/nav-2.png" alt="">
                 Projects</a></li>
-            <li><a href="">
-                <img src="../../assets/img/nav-3.png" alt="">
+            <li><a href="/me">
+                <img src="/assets/img/nav-3.png" alt="">
                 About me</a></li>
         </ul>
         <div class="navigation__toolbar">
             <div class="navigation__social">
-                <a href=""><img src="../assets/img/nav-4.png" alt=""></a>
-                <a href=""><img src="../assets/img/nav-5.png" alt=""></a>
+                <a href=""><img src="/assets/img/nav-4.png" alt=""></a>
+                <a href=""><img src="/assets/img/nav-5.png" alt=""></a>
             </div>
-            <button class="navigation__theme-switcher">
-                <img src="../assets/img/nav-6.png" alt="">
+            <button id="theme-switcher" class="navigation__theme-switcher">
+                <img src="/assets/img/nav-6.png" alt="">
             </button>
         </div>
 
@@ -55,24 +54,98 @@
             </div>
         </div>
     </section>
-    <section class="post">
+    <section class="posts">
         <div class="container">
             <div class="posts__header">
                 <h1>Latest Articles</h1>
                 <a href="/blog">View all</a>
             </div>
             <ul class="posts__list">
-                <li class="posts__list-item"><a href="">
-                    <h2>Creating a Schema-Based Form System</h2>
-                    <div>
-                        <time>Jan 31</time>
-                    </div>
-                </a></li>
+                <li class="posts__list-item"> <a href=""> <h2>Creating a Schema-Based Form System</h2> <div> <time>Jan 31</time> </div> </a></li>
+                <li class="posts__list-item"> <a href=""> <h2>2021 into 2022 </h2> <div> <time>Jan 01</time> </div> </a></li>
+                <li class="posts__list-item"> <a href=""> <h2>Lorem ipsum dolor sit amet consectetur.</h2> <div> <time>Jan 01</time> </div> </a></li>
+                <li class="posts__list-item"> <a href=""> <h2>Lorem ipsum dolor sit.</h2> <div> <time>Jan 01</time> </div> </a></li>
+                <li class="posts__list-item"> <a href=""> <h2>React Architecture: How to Structure and Organize a React Application</h2> <div> <time>Jan 01</time> </div> </a></li>
+            </ul>
+            <div class="posts__header">
+                <h1>Highlights</h1>
+                <a href="/blog">View all</a>
+            </div>
+            <ul class="posts__list">
+                <li class="posts__list-item"> 
+                    <a href="">
+                        <span class="list-item__wrapper"><img src="../assets/img/tags 1.png" alt="">
+                            <h2>Creating a Schema-Based Form System</h2>
+                        </span>
+                        <div> <time>Jan 31</time> </div>
+                    </a>
+                </li>
+                <li class="posts__list-item"> 
+                    <a href="">
+                        <span class="list-item__wrapper"><img src="../assets/img/tags 1.png" alt="">
+                            <h2>Creating a Schema-Based Form System</h2>
+                        </span>
+                        <div> <time>Jan 31</time> </div>
+                    </a>
+                </li>
+                <li class="posts__list-item"> 
+                    <a href="">
+                        <span class="list-item__wrapper"><img src="../assets/img/tags 2.png" alt="">
+                            <h2>Creating a Schema-Based Form System</h2>
+                        </span>
+                        <div> <time>Jan 31</time> </div>
+                    </a>
+                </li>
+                <li class="posts__list-item"> 
+                    <a href="">
+                        <span class="list-item__wrapper"><img src="../assets/img/tags 3.png" alt="">
+                            <h2>Creating a Schema-Based Form System</h2>
+                        </span>
+                        <div> <time>Jan 31</time> </div>
+                    </a>
+                </li>
             </ul>
         </div>
     </section>
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter__header">
+                <h1>Newsletter</h1>
+            </div>
+            <div class="flex-content">
+                <p>Subscribe to the newsletter to get my latest content by email. Not on any set schedule. Unsubscribe anytime.</p>
+                 <button class="btn btn--primary btn--md">Subscribe</button>
+            </div>
+            
+        </div>
+    </section>
 </main>
-    
+    <footer class="footer">
+  <section>
+    <nav>
+      <span>Made by Vikram Ratnoo</span>
+      <a href="#" target="_blank" rel="nopener norefferer">Newsletter</a>
+      <a href="#" target="_blank" rel="nopener norefferer">RSS</a>
+      <a href="#" target="_blank" rel="nopener norefferer">Patreon</a>
+    </nav>
+    <nav>
+      <a href="#" target="_blank" title="Github" rel="noopener noreferrer">
+        Eleventy
+        <img src="/assets/img/11ty.jpg" alt="" />
+      </a>
+      <a href="#" target="_blank" title="Github" rel="noopener noreferrer">
+        Github
+        <img src="/assets/img/nav-4.png" alt="" />
+      </a>
+      <a href="#" target="_blank" title="Github" rel="noopener noreferrer">
+        Twitter
+        <img src="/assets/img/nav-5.png" alt="" />
+      </a>
+    </nav>
+  </section>
+</footer>
+
      
+    <script src="/js/basic.js"></script>
 </body>
 </html>

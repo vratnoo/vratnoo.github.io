@@ -1,0 +1,53 @@
+.projects{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    flex: 0 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $clr-gray-opacity;
+    padding: 1.5rem;
+    border: 1px solid $clr-border-light;
+    border-radius: $br-radius-m;
+
+    h2{
+        border-bottom: none;
+        font-size: $fs-h3;
+        margin-bottom: 0;
+        text-align: center;
+        color: $font-color;
+    }
+
+    &__img{
+        max-width: 100%;
+        object-fit: contain;
+        height: auto;
+        max-height: 100px;
+        margin-top: 0.5rem;
+    }
+
+    .desc{
+        color: $font-color-gray;
+        font-size: $fs-h5;
+        margin-bottom: 1rem;
+    }
+
+    .stats{
+        display: flex;
+        align-items: center;
+        color: $font-color;
+        gap: 1rem;
+        
+        img{
+            max-width: 20px;
+
+        }
+
+    }
+
+}

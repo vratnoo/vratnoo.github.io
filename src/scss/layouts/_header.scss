@@ -1,5 +1,6 @@
 .navigation{
     background-color: $clr-navbar;
+    color: $font-color;
     height: 60px;
     border-bottom: 1px solid $clr-border-light;
 
@@ -8,6 +9,7 @@
     left: 0;
     width: 100%;
     z-index: 9999;
+
     a {
         &:hover {
             background-color: $clr-navbar-hover;
@@ -32,6 +34,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        color: var(--font-color);
 
         &-logo{
             font-size: $fs-h6;
@@ -61,6 +64,7 @@
             border-radius: $br-radius-s;
             font-size: $fs-small;
             font-weight: 500;
+            color: var(--font-color);
 
             @include md{
                flex-direction: column;
@@ -98,6 +102,7 @@
     }
     
     &__theme-switcher{
+        background-color: transparent;
         outline: none;
         border: none;
         cursor: pointer;

@@ -12,6 +12,7 @@ $font-sizes:(
 @mixin heading($size) {
         font-size: map.get($font-sizes, $size); 
         font-weight: 600;
+        margin-bottom: 0.75rem;
 }
 
 
