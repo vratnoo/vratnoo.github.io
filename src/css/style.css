@@ -465,6 +465,7 @@ main {
   gap: 1rem;
 }
 .posts__list-item .list-item__wrapper img {
+  flex: 0 0 auto;
   height: 25px;
   width: 25px;
   overflow: hidden;
